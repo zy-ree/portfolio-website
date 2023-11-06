@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="bow.png" />
+    <title>My Resume</title>
+    <script
+      src="https://kit.fontawesome.com/332147af81.js"
+      crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.png" class="logo" />
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link nav-light" href="#header">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-light" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-light" href="#hobbies">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-light" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="dark-mode-container">
+            <div id="dark-mode-toggle-container">
+              <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I'm <span>Zy-ree</span><br />From St. Clare College</h1>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-list">
+        <li><a class="nav-link nav-light" href="#header">Home</a></li>
+        <li><a class="nav-link nav-light" href="#about">About</a></li>
+        <li><a class="nav-link nav-light" href="#hobbies">Hobbies</a></li>
+        <li><a class="nav-link nav-light" href="#contact">Contact</a></li>
+      </ul>
+      <button id="menu-toggle" class="menu-toggle-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-------- about ------>
+    <div id="about"></div>
+    <div class="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="IMG_1546.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am absolutely passionate about technology, and as a computer
+              science student, I have found my true calling. The world of
+              technology continually amazes me with its endless possibilities,
+              and I am constantly in awe of how it shapes our lives. I am
+              confident that my knowledge and expertise in this field will be
+              invaluable in making a positive impact on the world and helping
+              solve some of the most pressing challenges we face. Technology is
+              not just a passion; it is a path to a promising future, and I am
+              excited to be a part of it.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web App Interfaces</li>
+                <li><span>Web Development</span><br />Web Development</li>
+                <li><span>App Development</span><br />Building Android/iOS</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>None</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2019-2021</span><br />STEM</li>
+                <li><span>2021-present</span><br />Computer Science</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------skills------ -->
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <div class="skills__container container grid">
+        <div>
+          <!--==================== SKILLS 1====================-->
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Frontend Developer</h1>
+                <span class="skills__subtitle"> 2 years</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__html"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">CSS</h3>
+                  <span class="skills__number">95%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__css"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">JavaScript</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__js"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== SKILLS 2====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-swatchbook skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Designer</h1>
+                <span class="skills__subtitle"> 3 years</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Figma</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__figma"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Sketch</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__sketch"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Photoshop</h3>
+                  <span class="skills__number">93%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__photoshop"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -----------hobbies------- -->
+    <div id="hobbies">
+      <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="hobbies-list">
+          <div>
+            <i class="fa-solid fa-book-open-reader"></i>
+            <h2>Reading</h2>
+            <p>
+              I have a deep passion for immersing myself in various forms of
+              written content, including books, mangas, webtoons, manhuas,
+              manhwa, novels, and light novels. Reading provides me with a
+              source of endless enjoyment and allows me to explore diverse
+              worlds, characters, and narratives across these different mediums.
+            </p>
+            <a href="https://www.goodreads.com/user/show/159259548-katana-par"
+              >Goodreads tracker</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-tv"></i>
+            <h2>Watching Anime</h2>
+            <p>
+              I have a deep affection for anime series that evoke a myriad of
+              emotions simultaneously, especially those that can stir up intense
+              feelings to the point of physical discomfort. These are the shows
+              that have the power to render me utterly speechless for days on
+              end, leaving me in a state of emotional turmoil that lingers long
+              after the credits roll.
+            </p>
+            <a href="https://myanimelist.net/profile/Mariko9">MyAnimeList</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-headphones"></i>
+            <h2>Blasting Music</h2>
+            <p>
+              I have a particular fondness for music that combines a lively and
+              upbeat melody with profound, thought-provoking lyrics,
+              particularly in the realm of J-pop. I'm drawn to songs that
+              incorporate robust electric guitar elements, as they add an extra
+              layer of energy and emotion to the music, making the listening
+              experience all the more engaging. There's something uniquely
+              captivating about the fusion of catchy tunes and meaningful
+              storytelling, and this blend is particularly resonant for me in
+              the context of Japanese pop music.
+            </p>
+            <a href="https://youtu.be/sAuEeM_6zpk?si=vXJtTmACT6onHYQ3"
+              >Listen</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> zyreepar@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +63 991 804 9162</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/bella.par.92"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/zy.colle/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://github.com/zy-ree"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ma-nicolle-zy-ree-par-b894ab28a/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyPxz7NAYn7tL-a8W4Ood4zzRVZ5SglKjW86u6yQcq6A_nDSBrPG5xoZ5wKeb10jzgUZA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+
+  <footer>
+    <p>© Ma. Nicolle Zy-ree A. Par. All rights reserved.</p>
+  </footer>
+</html>
